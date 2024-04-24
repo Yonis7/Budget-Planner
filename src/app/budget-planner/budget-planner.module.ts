@@ -7,11 +7,12 @@ import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
-    LoginComponent
+    // Remove LoginComponent from declarations array
   ],
   imports: [
     CommonModule,
-    BudgetPlannerRoutingModule
+    BudgetPlannerRoutingModule,
+    LoginComponent // Add LoginComponent to imports array
   ],
   exports: [
     LoginComponent,
