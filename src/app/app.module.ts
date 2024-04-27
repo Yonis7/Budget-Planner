@@ -8,21 +8,24 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app-routing.module';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideAnimations } from '@angular/platform-browser/animations';
-
+import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    RouterOutlet,
+    MatIconModule,
   ],
   providers: [
     provideRouter(routes),
     provideClientHydration(),
     provideAnimations(),
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
