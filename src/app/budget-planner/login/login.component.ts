@@ -32,9 +32,9 @@ export class LoginComponent {
     });
     //The register form is created using the FormBuilder service. The form group has three form controls: username, email, and password. The username form control is required. The email form control is required and must be a valid email address. The password form control is required and must have a minimum length of 6 characters.
     this.registerForm = this.fb.group({
-      username: ['', Validators.required],
-      email: ['', Validators.required, ],
-      password: ['', Validators.required],
+      username: ['', ],
+      email: ['',  ],
+      password: ['', ],
     });
   }
   //The toggleForm method is used to switch between the login and register forms. The activeForm property is used to determine which form is currently active. The login form is reset when the register form is active, and the register form is reset when the login form is active.
