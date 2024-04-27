@@ -7,7 +7,7 @@ body {
 
 
 .navbar {
-    background: linear-gradient(90deg, #40ff00, #ffffff);
+    background: linear-gradient(90deg, #66CDAA, #90EE90);
     padding: 10px 20px;
     display: flex;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -17,6 +17,7 @@ body {
     color: #ffffff
   }
 
+  // Login container styling
   .login-container {
     max-width: 400px;
     margin: 100px auto 50px auto;
@@ -25,9 +26,54 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 40px;
   }
-
+  // Header styling "Login"
   .login-container h2 {
     text-align: center;
     padding: 20px 0;
     border-bottom: 1px solid #e0e0e0;
   }
+  // Form styling
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px;
+
+  }
+// Input fields
+input[type='text'],
+input[type='password'],
+input[type='email'] {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #66CDAA;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  outline: none;
+}
+
+// Login button
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #66CDAA, #90EE90);
+}
+button:hover {
+  background: linear-gradient(135deg, #90EE90, #66CDAA);
+}
+// Register link
+p {
+  text-align: center;
+  cursor: pointer;
+  color: #208000;
+  transition: color 0.3s ease;
+  margin: 5px;
+}
+
+.highlighted {
+text-decoration: underline;
+}
+.highlighted:hover {
+  color: #80d6a7;
+}
