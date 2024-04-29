@@ -5,8 +5,25 @@
 </div>
 
 <div>
-  <!--  -->
   <div class="toggle-button-row" (click)="toggleSlideOut( )">
     <mat-icon>menu</mat-icon>
+  </div>
+</div>
+
+<!--
+  This div represents a slide-out panel in the side navigation component.
+  The "slide-out-panel" class is used to style the panel.
+  The [class.slide-out] directive is used to conditionally apply the "slide-out" class based on the value of the "isSlideOut" property.
+  When the "isSlideOut" property is true, the "slide-out" class will be applied, making the panel slide out.
+  This provides a visual indication to the user that the panel is currently open.
+-->
+<div class="slide-out-panel" [class.slide-out]="isSlideOut">
+  <div class="slide-out-content">
+    <h3 class="nav"> BudgetPlanner </h3>
+    <p class="edit-col" (click)="onDash()">DashBoard</p>
+    <p class="edit-col" (click)="onProfile()">Profile</p>
+    <p class="edit-col" (click)="onHistory()">Pre History</p>
+    <p class="edit-col" (click)="onLogout()">Logout</p>
+
   </div>
 </div>
